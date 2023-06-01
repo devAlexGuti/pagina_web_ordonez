@@ -1,0 +1,10 @@
+<?php
+$destino="industriasordonez.1989@gmail.com";
+$Nombre=$_POST["Nombre"];
+$Empresa=$_POST["Empresa"];
+$email=$_POST["email"];
+$mensaje=$_POST["mensaje"];
+$contenido="Nombre:".$nombre."\nNombre:".$Empresa."\nEmpresa:".$email."\nemail:".$mensaje."\nmensaje:";
+mail($destino,"Contacto",$contenido);
+header("Location:gracias.html")
+?>
